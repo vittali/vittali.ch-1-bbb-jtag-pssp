@@ -50,6 +50,9 @@
 /* deprecated, define only for backward compatibility */
 #define TYPE_CUSTOM		5
 
+/* Linux kernel defines this as (-1), below define avoids compile warnings */
+#define FW_RSC_ADDR_ANY		(~0)
+
 union fw_custom {
 	/* add custom resources here */
 	struct fw_rsc_custom_ints pru_ints;
